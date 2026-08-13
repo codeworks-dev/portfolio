@@ -22,8 +22,8 @@
 
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
 
-  <script type="module" crossorigin src="./assets/main-CC_dQho-.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BsIMjS7p.css">
+  <script type="module" crossorigin src="./assets/main-CqkZRDK9.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-HZx4tRSh.css">
 </head>
 
 <body>
@@ -60,12 +60,8 @@
 
         <section class="panel panel--hero" id="hero">
           <div class="hero__slider">
-            <!-- 
-              💡 [초기 로딩 렉 방어 수정] 
-              모든 비디오에 preload="metadata"를 부여하여 최소한의 첫 프레임 정보를 브라우저가 미리 쥐고 있게 설정.
-              이로써 비디오 렌더링 시 발생하는 검은 화면을 구조적으로 방어합니다.
-            -->
-            <video src="./img/hero-vid.mp4" autoplay loop muted playsinline class="hero__media active" preload="metadata"></video>
+            <video src="./img/hero-vid.mp4" autoplay loop muted playsinline class="hero__media active"
+              preload="metadata"></video>
             <img src="./img/hero-img-02.webp" alt="인테리어 무드 1" class="hero__media" decoding="async" />
             <video src="./img/hero-vid-2.mp4" loop muted playsinline class="hero__media" preload="metadata"></video>
             <img src="./img/hero-img-03.webp" alt="인테리어 무드 2" class="hero__media" decoding="async" />
@@ -118,7 +114,8 @@
           </div>
         </section>
 
-        <section class="panel panel--project" id="work">
+        <!-- 💡 워터마크 개별 조작을 위해 project-1 클래스 추가 -->
+        <section class="panel panel--project project-1" id="work">
           <div class="panel__watermark serif">03</div>
           <span class="section-tag serif">03 / WORK</span>
           <div class="project-card project-card--large" data-title="The Penthouse"
@@ -139,7 +136,8 @@
           </div>
         </section>
 
-        <section class="panel panel--project">
+        <!-- 💡 project-2 클래스 추가 -->
+        <section class="panel panel--project project-2">
           <div class="panel__watermark serif">04</div>
           <span class="section-tag serif">04 / WORK</span>
           <div class="project-card project-card--staggered" data-title="Seongsu Showroom"
@@ -165,7 +163,8 @@
           </div>
         </section>
 
-        <section class="panel panel--project">
+        <!-- 💡 project-3 클래스 추가 -->
+        <section class="panel panel--project project-3">
           <div class="panel__watermark serif">05</div>
           <span class="section-tag serif">05 / WORK</span>
           <div class="project-card project-card--panorama" data-title="Hanok Heritage"
@@ -261,7 +260,6 @@
     <div class="project-modal" inert>
       <div class="project-modal__overlay"></div>
       <div class="project-modal__content">
-        <!-- 💡 [모바일 터치 렉 해결] data-lenis-prevent 속성을 추가하여 스크롤 엔진 충돌을 막습니다. -->
         <div class="project-modal__inner" id="modal-inner-scroll" data-lenis-prevent>
           <div class="project-modal__image-placeholder">
             <img class="modal-main-img" src="" alt="확대된 프로젝트 이미지" />
