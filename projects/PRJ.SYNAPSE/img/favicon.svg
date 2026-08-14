@@ -1,0 +1,13 @@
+<!-- public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- 딥블랙 둥근 배경 -->
+  <rect width="120" height="120" rx="28" fill="#09090b"/>
+  
+  <!-- 시냅스 연결선 -->
+  <path d="M35 35 L85 50 L45 85 Z" fill="none" stroke="#ccff00" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- 시냅스 노드 (점) -->
+  <circle cx="35" cy="35" r="8" fill="#ccff00"/>
+  <circle cx="85" cy="50" r="10" fill="#ccff00"/>
+  <circle cx="45" cy="85" r="12" fill="#ccff00"/>
+</svg>
