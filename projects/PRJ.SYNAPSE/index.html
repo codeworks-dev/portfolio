@@ -6,8 +6,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+  <!-- 기본 SEO 태그 -->
   <title>SYNAPSE. | Creative Technology Studio</title>
   <meta name="description" content="예술과 알고리즘이 교차하는 곳. 경계를 허무는 몰입형 웹 경험을 설계하는 스튜디오, 시냅스." />
+
+  <!-- 🌟 [신규] Open Graph (OG) 태그 세팅 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juwons-factory.vercel.app/projects/PRJ.SYNAPSE/index.html" />
+  <meta property="og:title" content="SYNAPSE. | Creative Technology Studio" />
+  <meta property="og:description" content="예술과 알고리즘이 교차하는 곳. 경계를 허무는 몰입형 웹 경험을 설계하는 스튜디오, 시냅스." />
+  <meta property="og:image" content="./img/og-image.webp" /> 
+  <meta property="og:site_name" content="SYNAPSE." />
 
   <!-- SVG 파비콘 연결 -->
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
@@ -122,7 +131,6 @@
               </div>
               <div class="work-category">Architecture / WebGL & High-end UI</div>
               <div class="work-img-inline">
-                <!-- ./public/img/ -> ./img/ 로 경로 수정 유지 -->
                 <img src="./img/screenshot_studioblank.webp" alt="STUDIO BLANK 프로젝트 스크린샷">
               </div>
             </a>
@@ -136,7 +144,6 @@
               </div>
               <div class="work-category">F&B Identity / Interactive Grid System</div>
               <div class="work-img-inline">
-                <!-- ./public/img/ -> ./img/ 로 경로 수정 유지 -->
                 <img src="./img/screenshot-RoastCraft.webp" alt="ROASTCRAFT 프로젝트 스크린샷">
               </div>
             </a>
@@ -150,7 +157,6 @@
               </div>
               <div class="work-category">Cosmetic / Fluid Shader Transition</div>
               <div class="work-img-inline">
-                <!-- ./public/img/ -> ./img/ 로 경로 수정 유지 -->
                 <img src="./img/screenshot_lavien.webp" alt="LAVIEN 프로젝트 스크린샷">
               </div>
             </a>
@@ -276,12 +282,11 @@
   </main>
 
   <!-- JS Libraries -->
-  <!-- 🚨 [버그 수정] Vite 빌드 환경에서 메인 모듈 실행 전 GSAP이 완벽하게 세팅되도록 defer 속성 제거 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
 
-  <!-- 모듈 타입은 내부적으로 defer 동작을 수행하여 HTML 파싱 후 안전하게 실행됨 -->
+  <!-- 메인 스크립트 -->
 </body>
 
 </html>
