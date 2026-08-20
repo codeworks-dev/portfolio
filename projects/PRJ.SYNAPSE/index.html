@@ -1,33 +1,24 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <!-- 기본 SEO 태그 -->
   <title>SYNAPSE. | Creative Technology Studio</title>
   <meta name="description" content="예술과 알고리즘이 교차하는 곳. 경계를 허무는 몰입형 웹 경험을 설계하는 스튜디오, 시냅스." />
-
-  <!-- 🌟 [신규] Open Graph (OG) 태그 세팅 -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://juwons-factory.vercel.app/projects/PRJ.SYNAPSE/index.html" />
   <meta property="og:title" content="SYNAPSE. | Creative Technology Studio" />
   <meta property="og:description" content="예술과 알고리즘이 교차하는 곳. 경계를 허무는 몰입형 웹 경험을 설계하는 스튜디오, 시냅스." />
-  <meta property="og:image" content="./img/og-image.webp" /> 
+  <meta property="og:image" content="./img/og-image.webp" />
   <meta property="og:site_name" content="SYNAPSE." />
-
-  <!-- SVG 파비콘 연결 -->
   <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
-
-  <script type="module" crossorigin src="./assets/main-91vxFD9C.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BbHllNBn.css">
+  <script type="module" crossorigin src="./assets/main-CyHqee_-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-B8wpt5yp.css">
 </head>
 
 <body>
 
-  <!-- Preloader -->
   <div class="preloader">
     <div class="preloader-counter font-en">0%</div>
   </div>
@@ -36,7 +27,14 @@
     <span class="cursor-text font-en"></span>
   </div>
 
-  <!-- Full-screen Navigation Overlay -->
+  <svg class="sr-only">
+    <filter id="fluid-distort">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.015" numOctaves="1" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B"
+        id="displacement-map" />
+    </filter>
+  </svg>
+
   <div class="nav-overlay" aria-hidden="true">
     <div class="nav-overlay-inner container">
       <div class="nav-info font-en">
@@ -52,7 +50,6 @@
           <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" class="nav-info-link">Behance</a>
         </div>
       </div>
-
       <ul class="nav-links font-en">
         <li><a href="#smooth-content" class="nav-link" data-text="Home.">Home.</a></li>
         <li><a href="#works-section" class="nav-link" data-text="Works.">Works.</a></li>
@@ -82,14 +79,12 @@
   <main id="smooth-wrapper">
     <div id="smooth-content">
 
-      <!-- 1. Hero Section -->
       <section class="hero">
         <div class="hero-bg" aria-hidden="true">
           <canvas id="hero-canvas"></canvas>
           <div class="glow-orb"></div>
           <div class="noise-overlay"></div>
         </div>
-
         <div class="container hero-content">
           <h1 class="hero-title font-en">
             <span class="line scramble-text">WE ENGINEER</span>
@@ -98,31 +93,31 @@
           </h1>
           <p class="hero-desc text-balance">예술과 알고리즘이 교차하는 하이엔드 크리에이티브 스튜디오.</p>
         </div>
-
-        
       </section>
 
-      <!-- 2. Manifesto Section -->
       <section class="manifesto">
-        <div class="container">
+        <div class="manifesto-bg" aria-hidden="true">
+          <video class="manifesto-video" autoplay loop muted playsinline>
+            <source src="./media/showreel.mp4" type="video/mp4" />
+          </video>
+          <div class="manifesto-overlay"></div>
+        </div>
+        <div class="container manifesto-content">
           <h2 class="manifesto-text text-balance">
-            코드와 예술의 경계. <br />
-            디지털 환경의 한계를 해체하고 <br />
-            픽셀 단위의 집요함으로 <span class="highlight">압도적인 마스터피스</span>를 창조합니다.
+            보이는 것은 예술, 본질은 공학.<br />
+            타협 없는 퍼포먼스로<br />
+            <span class="highlight">압도적 몰입</span>을 설계합니다.
           </h2>
         </div>
       </section>
 
-      <!-- 3. Our Works -->
       <section class="works" id="works-section">
         <div class="container">
           <div class="works-header">
             <h2 class="section-title font-en">Featured<br />Works.</h2>
-            <p class="section-desc">SYNAPSE가 설계한 몰입형 디지털 공간들</p>
+            <p class="section-desc">시냅스가 구축한 새로운 차원의 디지털 프로덕트.</p>
           </div>
-
           <div class="works-list">
-            <!-- 리스트 1 -->
             <a href="https://juwons-factory.vercel.app/projects/PRJ.STUDIOBLANK/index.html" target="_blank"
               rel="noopener noreferrer" class="work-item">
               <div class="work-item-inner">
@@ -131,11 +126,9 @@
               </div>
               <div class="work-category">Architecture / WebGL & High-end UI</div>
               <div class="work-img-inline">
-                <img src="./img/screenshot_studioblank.webp" alt="STUDIO BLANK 프로젝트 스크린샷">
+                <img src="./img/screenshot_studioblank.webp" alt="STUDIO BLANK">
               </div>
             </a>
-
-            <!-- 리스트 2 -->
             <a href="https://juwons-factory.vercel.app/projects/PRJ.RoastCraft/index.html" target="_blank"
               rel="noopener noreferrer" class="work-item">
               <div class="work-item-inner">
@@ -144,11 +137,9 @@
               </div>
               <div class="work-category">F&B Identity / Interactive Grid System</div>
               <div class="work-img-inline">
-                <img src="./img/screenshot-RoastCraft.webp" alt="ROASTCRAFT 프로젝트 스크린샷">
+                <img src="./img/screenshot-RoastCraft.webp" alt="ROASTCRAFT">
               </div>
             </a>
-
-            <!-- 리스트 3 -->
             <a href="https://juwons-factory.vercel.app/projects/PRJ.LAVIEN-3/index.html" target="_blank"
               rel="noopener noreferrer" class="work-item">
               <div class="work-item-inner">
@@ -157,43 +148,69 @@
               </div>
               <div class="work-category">Cosmetic / Fluid Shader Transition</div>
               <div class="work-img-inline">
-                <img src="./img/screenshot_lavien.webp" alt="LAVIEN 프로젝트 스크린샷">
+                <img src="./img/screenshot_lavien.webp" alt="LAVIEN">
               </div>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- 4. Capabilities Section -->
       <section class="capabilities">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title font-en">Our Core.</h2>
-            <p class="section-desc">평범한 웹사이트가 아닌, 강력한 무기를 만듭니다.</p>
+            <p class="section-desc">프레임워크의 한계를 돌파하는 독보적인 기술 스택.</p>
           </div>
-
-          <ul class="cap-list">
-            <li class="cap-item">
-              <div class="cap-name font-en">Immersive Web</div>
-              <div class="cap-tech">WebGL / Three.js / Canvas</div>
-            </li>
-            <li class="cap-item">
-              <div class="cap-name font-en">Creative Engineering</div>
-              <div class="cap-tech">GSAP / Framer Motion / Lenis</div>
-            </li>
-            <li class="cap-item">
-              <div class="cap-name font-en">Performance Edge</div>
-              <div class="cap-tech">Vite / SSR / 0.1s Load Time</div>
-            </li>
-            <li class="cap-item">
-              <div class="cap-name font-en">Motion Identity</div>
-              <div class="cap-tech">Micro-interactions / Fluid UI</div>
-            </li>
-          </ul>
+          <div class="bento-grid">
+            <div class="bento-item bento-large cap-item">
+              <svg class="bento-icon icon-spin-slow" viewBox="0 0 100 100" width="160" height="160">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(204,255,0,0.2)" stroke-width="1.5" />
+                <ellipse cx="50" cy="50" rx="45" ry="15" fill="none" stroke="rgba(204,255,0,0.2)" stroke-width="1.5"
+                  transform="rotate(45 50 50)" />
+                <ellipse cx="50" cy="50" rx="45" ry="15" fill="none" stroke="rgba(204,255,0,0.2)" stroke-width="1.5"
+                  transform="rotate(-45 50 50)" />
+              </svg>
+              <div class="bento-content">
+                <div class="cap-name font-en">Immersive Web</div>
+                <div class="cap-tech">WebGL / Three.js / Canvas</div>
+              </div>
+              <div class="bento-deco circle-glow"></div>
+            </div>
+            <div class="bento-item bento-tall cap-item">
+              <svg class="bento-icon icon-spin-reverse" viewBox="0 0 100 100" width="80" height="80">
+                <polygon points="50,5 90,95 10,95" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                <polygon points="50,95 90,5 10,5" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+              </svg>
+              <div class="bento-content">
+                <div class="cap-name font-en">Creative<br />Eng.</div>
+                <div class="cap-tech">GSAP / Framer</div>
+              </div>
+            </div>
+            <div class="bento-item bento-small cap-item">
+              <svg class="bento-icon icon-pulse" viewBox="0 0 100 100" width="60" height="60">
+                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                <circle cx="50" cy="50" r="25" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"
+                  stroke-dasharray="5 5" />
+                <circle cx="50" cy="50" r="10" fill="rgba(204,255,0,0.3)" />
+              </svg>
+              <div class="bento-content">
+                <div class="cap-name font-en">Performance</div>
+                <div class="cap-tech">0.1s Load Time</div>
+              </div>
+            </div>
+            <div class="bento-item bento-small cap-item">
+              <svg class="bento-icon icon-wave" viewBox="0 0 100 100" width="60" height="60">
+                <path d="M 0 50 Q 25 10 50 50 T 100 50" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="3" />
+              </svg>
+              <div class="bento-content">
+                <div class="cap-name font-en">Motion ID</div>
+                <div class="cap-tech">Fluid UI</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- 4.5. Infinite Marquee Section -->
       <section class="marquee">
         <div class="marquee-inner font-en">
           <span>CREATIVE ENGINEERING</span> <span class="star">✦</span>
@@ -205,56 +222,59 @@
         </div>
       </section>
 
-      <!-- 5. Process Section -->
       <section class="process">
         <div class="container process-layout">
           <div class="process-left">
             <h2 class="huge-section-title font-en">The<br />Algorithm.</h2>
-            <p class="section-desc">완벽한 결과물을 추출하기 위한<br />시냅스만의 정교한 메커니즘.</p>
+            <p class="section-desc">완벽한 디지털 경험을 구축하는<br />시냅스만의 공학적 프로세스.</p>
           </div>
-
           <div class="process-right">
             <div class="step-card">
               <div class="step-num font-en">01</div>
               <div class="step-content">
                 <h3>Discovery & Strategy</h3>
-                <p>브랜드의 본질을 꿰뚫어 보고, 디지털 환경에서 가장 파급력 있는 스토리텔링과 전략을 설계합니다.</p>
+                <p>브랜드의 본질을 분석하고 파급력 있는 디지털 코어(Core) 전략을 수립합니다.</p>
               </div>
             </div>
             <div class="step-card">
               <div class="step-num font-en">02</div>
               <div class="step-content">
                 <h3>Creative Blueprint</h3>
-                <p>단순한 시각적 디자인을 넘어, 유저의 시선과 마문을 이끄는 치밀한 UX/UI와 인터랙션 동선을 기획합니다.</p>
+                <p>유저의 시선과 직관을 완벽하게 통제하는 치밀한 UX/UI 레이아웃을 설계합니다.</p>
               </div>
             </div>
             <div class="step-card">
               <div class="step-num font-en">03</div>
               <div class="step-content">
                 <h3>Creative Engineering</h3>
-                <p>프레임워크의 한계를 깨는 최첨단 프론트엔드 기술(WebGL, GSAP)을 집약하여 디자인을 살아 숨 쉬게 만듭니다.</p>
+                <p>WebGL과 고도화된 프론트엔드 기술을 집약하여 정적인 디자인에 생명력을 부여합니다.</p>
               </div>
             </div>
             <div class="step-card">
               <div class="step-num font-en">04</div>
               <div class="step-content">
                 <h3>QA & Polishing</h3>
-                <p>60fps의 압도적인 렌더링 성능과 픽셀 단위의 오차도 허용하지 않는 혹독한 디테일 마감 작업을 거칩니다.</p>
+                <p>60fps의 부드러운 렌더링과 픽셀 단위의 오차도 허용하지 않는 극강의 디테일 마감을 거칩니다.</p>
               </div>
             </div>
             <div class="step-card">
               <div class="step-num font-en">05</div>
               <div class="step-content">
                 <h3>Launch & Evolve</h3>
-                <p>세상에 없던 디지털 경험을 성공적으로 런칭하며, 지속적인 성능 모니터링을 통해 프로덕트를 고도화합니다.</p>
+                <p>안정적인 프로덕트 런칭 후, 지속적인 성능 모니터링을 통해 경험을 끝없이 진화시킵니다.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 6. Footer Section -->
       <footer class="footer" id="footer-section">
+        <div class="footer-bg" aria-hidden="true">
+          <video autoplay loop muted playsinline>
+            <source src="./media/ignite.mp4" type="video/mp4" />
+          </video>
+          <div class="footer-overlay"></div>
+        </div>
         <div class="footer-inner container">
           <div class="footer-cta">
             <h2 class="footer-huge-text font-en">IGNITE <br class="br-mobile" />VISION</h2>
@@ -264,7 +284,6 @@
               </a>
             </div>
           </div>
-
           <div class="footer-bottom">
             <div class="footer-info">
               <span class="font-en">SYNAPSE. Studio</span>
@@ -281,12 +300,9 @@
     </div>
   </main>
 
-  <!-- JS Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
-
-  <!-- 메인 스크립트 -->
 </body>
 
 </html>
